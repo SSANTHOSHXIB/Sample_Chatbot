@@ -79,8 +79,6 @@ with open('tokenizer.pickle', 'wb') as handle:
 with open('label_encoder.pickle', 'wb') as ecn_file:
     pickle.dump(lbl_encoder, ecn_file, protocol=pickle.HIGHEST_PROTOCOL)
 
-!pip install colorama
-
 import json
 import numpy as np
 from tensorflow import keras

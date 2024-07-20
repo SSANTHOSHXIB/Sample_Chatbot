@@ -7,6 +7,7 @@ Original file is located at
     https://colab.research.google.com/drive/1Hh79Z-pfZVRH2CgzP5G9b32Kh64CBIlt
 """
 
+
 import json
 import numpy as np
 import tensorflow as tf
@@ -17,7 +18,7 @@ from tensorflow.keras.preprocessing.text import Tokenizer
 from tensorflow.keras.preprocessing.sequence import pad_sequences
 from sklearn.preprocessing import LabelEncoder
 
-with open('/content/intents.json') as file:
+with open('intents.json') as file:
     data = json.load(file)
 
 training_sentences = []
